@@ -58,10 +58,10 @@ body {
   width: 140px;
 }
 .fadeUp {
-  animation-name: fadeUpAnime;
-  animation-duration: 0.2s;
+  /* animation-name: fadeUpAnime;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
-  opacity: 0;
+  opacity: 0; */
 }
 @keyframes fadeUpAnime {
   from { opacity: 0;}

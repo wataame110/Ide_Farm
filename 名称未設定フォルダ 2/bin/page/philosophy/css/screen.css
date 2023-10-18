@@ -1,0 +1,1762 @@
+@charset "UTF-8";
+/*color*/
+/*anim*/
+/*size*/
+/*============================
+mixin
+============================*/
+/*
+* keyframes animationの定義
+* ※_anim.scssに定義
+*/
+/*
+* keyframesで定義したkeyframes animationの設定
+* @include animation(animation_name $time linear infinite);
+*/
+/*
+* css animationの時間とeasing指定
+*/
+/*
+* position:absoluteで縦横中央ぞろえ
+*/
+/*
+* 左右に均等のマージンをとった幅指定
+*/
+/*============================
+easing
+============================*/
+/*============================
+animation
+============================*/
+@media screen and (min-width: 1921px) {
+  /* line 2, ../../../../src/page/philosophy/css/_pc.scss */
+  body {
+    	/*
+    	@function cvwp($size){
+    		// @return ($size / 1920 * 100) + vw;
+    		@if $mid == true{
+    			@return ($size) + px;
+    		} @else{
+    			@return ($size) + px;
+    		}
+    	}
+    
+    	@function cvwp($size){
+    		@return ($size) + px;
+    	}
+    
+    	.txt_up_h1{
+    		.t{
+    			span,path{
+    				transform: translateY(0%) !important;
+    			}
+    		}
+    	}
+    	
+    	.txt_up_h2{
+    		.t{
+    			span,path{
+    				transform: translateY(0%) !important;
+    			}
+    		}
+    	}
+    	.jp{
+    		opacity: 1 !important;
+    	}
+    	background: url(../img/_guide.png) no-repeat top center;
+    	// background: url(../img/_guidemenu.png) no-repeat top center;
+    	// background-size: 100% auto;
+    	// background-size: 1680px auto;
+    	background-size: 1360px auto;
+    	background-position: 50% 0px;
+    	width: 100%;
+        margin: 0 auto !important;
+    	// background-position: 50% 9px;
+        // &::-webkit-scrollbar {
+        //     display:none;
+        // }
+    	#header{
+    		width: 1360px !important;
+    		left: 50% !important;
+    		transform: translateX(-50%);
+    	}
+    	#menu_wide {
+    		left: 50% !important;
+    		transform: translateX(-50%) !important;
+    		width: 1360px !important;
+    		height: 765px !important;
+    	}
+    	#wrapper{
+    		opacity: 0.6 !important;
+    		// width: 1280px;
+    		width: 1360px;
+    		margin: 0 auto;
+    		.container{
+    			width: 1240px;
+    			margin: 0 auto;
+    			position: relative;
+    		}
+    	}
+    	#top{
+    		height: 759px !important;
+    	}
+        #header{
+    		opacity: 0.6 !important;
+    	}
+    */
+    /*============================
+    #wrapper
+    ============================*/
+  }
+  /* line 80, ../../../../src/page/philosophy/css/_pc.scss */
+  body .screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
+    pointer-events: none;
+    z-index: -1;
+  }
+  /* line 90, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper {
+    position: relative;
+    overflow: clip;
+    /*============================
+    #main
+    ============================*/
+  }
+  /* line 93, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #logo_fix {
+    position: absolute;
+    top: 86.25px;
+    left: 75px;
+    width: 5.88235vw;
+    transform: scale(1);
+  }
+  /* line 99, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #logo_fix .mark_anim {
+    width: 6.69118vw;
+    margin: -1.98529vw 0 0 -0.44118vw;
+  }
+  /* line 104, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper section {
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+  }
+  /* line 112, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main {
+    position: relative;
+    z-index: 10;
+    /*============================
+    #top
+    ============================*/
+    /*============================
+    #history
+    ============================*/
+    /*============================
+    #philosophy
+    ============================*/
+    /*============================
+    #next
+    ============================*/
+  }
+  /* line 115, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .en_jp {
+    display: block;
+  }
+  /* line 117, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .en_jp .en {
+    display: block;
+    font-family: 'Crimson Text', serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    /* 56px */
+    letter-spacing: 3.5px;
+  }
+  /* line 126, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .en_jp .jp {
+    display: block;
+    font-size: 22.5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 209%;
+    /* 43.2px */
+    letter-spacing: 3.375px;
+    opacity: 0;
+    transition: all 0.4s;
+    transition-timing-function: linear;
+  }
+  /* line 136, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .en_jp .jp.open {
+    opacity: 1;
+  }
+  /* line 141, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .fadein {
+    opacity: 0;
+    transition: all 0.79s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  /* line 145, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .fadein.img2 {
+    transition-delay: 0.35s;
+  }
+  /* line 147, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .fadein.img2 picture {
+    transition-delay: 0.35s;
+  }
+  /* line 151, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .fadein.open {
+    opacity: 1;
+  }
+  /* line 153, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .fadein.open picture {
+    filter: blur(0px);
+  }
+  /* line 157, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .fadein picture {
+    filter: blur(80px);
+    transition: all 0.79s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  /* line 166, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top {
+    height: 100vh;
+    overflow: visible;
+    pointer-events: none;
+  }
+  /* line 170, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 123.75px;
+  }
+  /* line 177, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  /* line 183, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .photo picture {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 186, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .photo picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* line 193, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .maincopy {
+    position: absolute;
+    bottom: 14.48529vw;
+    left: 171.25px;
+    width: 526.25px;
+  }
+  /* line 198, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .maincopy .t {
+    font-size: 32.5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 62.4px */
+    letter-spacing: 3.125px;
+    color: #4f1705;
+  }
+  /* line 207, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .copy {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    overflow: hidden;
+  }
+  /* line 214, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .copy picture {
+    display: inline-block;
+    transition: all 0.23s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+    transition: all 0.6s;
+    transition-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+    opacity: 0;
+  }
+  /* line 223, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .copy.open picture {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* line 232, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .content .txts {
+    opacity: 0;
+    transition: all 0.4s;
+    transition-timing-function: linear;
+  }
+  /* line 236, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .content .txts.open {
+    opacity: 1;
+  }
+  /* line 239, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .content .txts .t1 {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    /* 40px */
+    letter-spacing: 3.75px;
+    margin-bottom: 31.25px;
+  }
+  /* line 247, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .content .txts .t2 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    /* 32px */
+    letter-spacing: 3px;
+  }
+  /* line 259, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #history {
+    padding-top: 247.5px;
+    padding-bottom: 172.5px;
+  }
+  /* line 262, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #history .container {
+    width: 1356.25px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  /* line 269, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #history .container .img {
+    width: 587.5px;
+    margin: 0 180px 0 0;
+  }
+  /* line 273, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #history .container .content {
+    padding-top: 87.5px;
+  }
+  /* line 275, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #history .container .content h2 {
+    margin-bottom: 80px;
+  }
+  /* line 278, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #history .container .content .txts {
+    margin: 0 0 0 85px;
+  }
+  /* line 288, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #philosophy {
+    padding-bottom: 153.75px;
+  }
+  /* line 290, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #philosophy .container {
+    width: 1550px;
+  }
+  /* line 292, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #philosophy .container .content {
+    margin-left: 367.5px;
+    margin-bottom: 137.5px;
+  }
+  /* line 295, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #philosophy .container .content h2 {
+    margin-bottom: 81.25px;
+  }
+  /* line 298, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #philosophy .container .content .txts {
+    margin-left: 87.5px;
+  }
+  /* line 302, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #philosophy .container .img1 {
+    width: 845px;
+    margin-left: 607.5px;
+  }
+  /* line 306, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #philosophy .container .img2 {
+    width: 637.5px;
+    margin: -340px 0 0 12.5px;
+  }
+  /* line 316, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #next {
+    padding-bottom: 245px;
+  }
+  /* line 318, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #next .container {
+    width: 1550px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  /* line 324, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #next .container .content {
+    width: 737.5px;
+    margin: 133.75px 0 0 183.75px;
+  }
+  /* line 327, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #next .container .content h2 {
+    margin-bottom: 80px;
+  }
+  /* line 330, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #next .container .content .txts {
+    margin-left: 86.25px;
+  }
+  /* line 334, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #next .container .img {
+    width: 588.75px;
+  }
+  /* line 344, ../../../../src/page/philosophy/css/_pc.scss */
+  body .fade_line {
+    position: fixed;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: url(http://www.fujiya-peko.co.jp/notfound.html) repeat-x center bottom;
+    background-size: auto 100%;
+    z-index: 50;
+    pointer-events: none;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  /* line 355, ../../../../src/page/philosophy/css/_pc.scss */
+  body .fade_line.intro_fade_line {
+    opacity: 0;
+    height: 250px;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  /* line 359, ../../../../src/page/philosophy/css/_pc.scss */
+  body .fade_line.intro_fade_line.active {
+    opacity: 1;
+  }
+}
+/*color*/
+/*anim*/
+/*size*/
+/*============================
+mixin
+============================*/
+/*
+* keyframes animationの定義
+* ※_anim.scssに定義
+*/
+/*
+* keyframesで定義したkeyframes animationの設定
+* @include animation(animation_name $time linear infinite);
+*/
+/*
+* css animationの時間とeasing指定
+*/
+/*
+* position:absoluteで縦横中央ぞろえ
+*/
+/*
+* 左右に均等のマージンをとった幅指定
+*/
+/*============================
+easing
+============================*/
+/*============================
+animation
+============================*/
+@media screen and (min-width: 1360px) and (max-width: 1921px) {
+  /* line 2, ../../../../src/page/philosophy/css/_pc.scss */
+  body {
+    	/*
+    	@function cvwp($size){
+    		// @return ($size / 1920 * 100) + vw;
+    		@if $mid == true{
+    			@return ($size) + px;
+    		} @else{
+    			@return ($size) + px;
+    		}
+    	}
+    
+    	@function cvwp($size){
+    		@return ($size) + px;
+    	}
+    
+    	.txt_up_h1{
+    		.t{
+    			span,path{
+    				transform: translateY(0%) !important;
+    			}
+    		}
+    	}
+    	
+    	.txt_up_h2{
+    		.t{
+    			span,path{
+    				transform: translateY(0%) !important;
+    			}
+    		}
+    	}
+    	.jp{
+    		opacity: 1 !important;
+    	}
+    	background: url(../img/_guide.png) no-repeat top center;
+    	// background: url(../img/_guidemenu.png) no-repeat top center;
+    	// background-size: 100% auto;
+    	// background-size: 1680px auto;
+    	background-size: 1360px auto;
+    	background-position: 50% 0px;
+    	width: 100%;
+        margin: 0 auto !important;
+    	// background-position: 50% 9px;
+        // &::-webkit-scrollbar {
+        //     display:none;
+        // }
+    	#header{
+    		width: 1360px !important;
+    		left: 50% !important;
+    		transform: translateX(-50%);
+    	}
+    	#menu_wide {
+    		left: 50% !important;
+    		transform: translateX(-50%) !important;
+    		width: 1360px !important;
+    		height: 765px !important;
+    	}
+    	#wrapper{
+    		opacity: 0.6 !important;
+    		// width: 1280px;
+    		width: 1360px;
+    		margin: 0 auto;
+    		.container{
+    			width: 1240px;
+    			margin: 0 auto;
+    			position: relative;
+    		}
+    	}
+    	#top{
+    		height: 759px !important;
+    	}
+        #header{
+    		opacity: 0.6 !important;
+    	}
+    */
+    /*============================
+    #wrapper
+    ============================*/
+  }
+  /* line 80, ../../../../src/page/philosophy/css/_pc.scss */
+  body .screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
+    pointer-events: none;
+    z-index: -1;
+  }
+  /* line 90, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper {
+    position: relative;
+    overflow: clip;
+    /*============================
+    #main
+    ============================*/
+  }
+  /* line 93, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #logo_fix {
+    position: absolute;
+    top: 69px;
+    left: 60px;
+    width: 5.88235vw;
+    transform: scale(1);
+  }
+  /* line 99, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #logo_fix .mark_anim {
+    width: 6.69118vw;
+    margin: -1.98529vw 0 0 -0.44118vw;
+  }
+  /* line 104, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper section {
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+  }
+  /* line 112, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main {
+    position: relative;
+    z-index: 10;
+    /*============================
+    #top
+    ============================*/
+    /*============================
+    #history
+    ============================*/
+    /*============================
+    #philosophy
+    ============================*/
+    /*============================
+    #next
+    ============================*/
+  }
+  /* line 115, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .en_jp {
+    display: block;
+  }
+  /* line 117, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .en_jp .en {
+    display: block;
+    font-family: 'Crimson Text', serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    /* 56px */
+    letter-spacing: 2.8px;
+  }
+  /* line 126, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .en_jp .jp {
+    display: block;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 209%;
+    /* 43.2px */
+    letter-spacing: 2.7px;
+    opacity: 0;
+    transition: all 0.4s;
+    transition-timing-function: linear;
+  }
+  /* line 136, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .en_jp .jp.open {
+    opacity: 1;
+  }
+  /* line 141, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .fadein {
+    opacity: 0;
+    transition: all 0.79s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  /* line 145, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .fadein.img2 {
+    transition-delay: 0.35s;
+  }
+  /* line 147, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .fadein.img2 picture {
+    transition-delay: 0.35s;
+  }
+  /* line 151, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .fadein.open {
+    opacity: 1;
+  }
+  /* line 153, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .fadein.open picture {
+    filter: blur(0px);
+  }
+  /* line 157, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .fadein picture {
+    filter: blur(80px);
+    transition: all 0.79s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  /* line 166, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top {
+    height: 100vh;
+    overflow: visible;
+    pointer-events: none;
+  }
+  /* line 170, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 99px;
+  }
+  /* line 177, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  /* line 183, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .photo picture {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 186, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .photo picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* line 193, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .maincopy {
+    position: absolute;
+    bottom: 14.48529vw;
+    left: 137px;
+    width: 421px;
+  }
+  /* line 198, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .maincopy .t {
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 62.4px */
+    letter-spacing: 2.5px;
+    color: #4f1705;
+  }
+  /* line 207, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .copy {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    overflow: hidden;
+  }
+  /* line 214, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .copy picture {
+    display: inline-block;
+    transition: all 0.23s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+    transition: all 0.6s;
+    transition-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+    opacity: 0;
+  }
+  /* line 223, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .copy.open picture {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* line 232, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .content .txts {
+    opacity: 0;
+    transition: all 0.4s;
+    transition-timing-function: linear;
+  }
+  /* line 236, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .content .txts.open {
+    opacity: 1;
+  }
+  /* line 239, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .content .txts .t1 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    /* 40px */
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+  }
+  /* line 247, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .content .txts .t2 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    /* 32px */
+    letter-spacing: 2.4px;
+  }
+  /* line 259, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #history {
+    padding-top: 198px;
+    padding-bottom: 138px;
+  }
+  /* line 262, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #history .container {
+    width: 1085px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  /* line 269, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #history .container .img {
+    width: 470px;
+    margin: 0 144px 0 0;
+  }
+  /* line 273, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #history .container .content {
+    padding-top: 70px;
+  }
+  /* line 275, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #history .container .content h2 {
+    margin-bottom: 64px;
+  }
+  /* line 278, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #history .container .content .txts {
+    margin: 0 0 0 68px;
+  }
+  /* line 288, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #philosophy {
+    padding-bottom: 123px;
+  }
+  /* line 290, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #philosophy .container {
+    width: 1240px;
+  }
+  /* line 292, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #philosophy .container .content {
+    margin-left: 294px;
+    margin-bottom: 110px;
+  }
+  /* line 295, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #philosophy .container .content h2 {
+    margin-bottom: 65px;
+  }
+  /* line 298, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #philosophy .container .content .txts {
+    margin-left: 70px;
+  }
+  /* line 302, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #philosophy .container .img1 {
+    width: 676px;
+    margin-left: 486px;
+  }
+  /* line 306, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #philosophy .container .img2 {
+    width: 510px;
+    margin: -272px 0 0 10px;
+  }
+  /* line 316, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #next {
+    padding-bottom: 196px;
+  }
+  /* line 318, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #next .container {
+    width: 1240px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  /* line 324, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #next .container .content {
+    width: 590px;
+    margin: 107px 0 0 147px;
+  }
+  /* line 327, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #next .container .content h2 {
+    margin-bottom: 64px;
+  }
+  /* line 330, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #next .container .content .txts {
+    margin-left: 69px;
+  }
+  /* line 334, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #next .container .img {
+    width: 471px;
+  }
+  /* line 344, ../../../../src/page/philosophy/css/_pc.scss */
+  body .fade_line {
+    position: fixed;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: url(http://www.fujiya-peko.co.jp/notfound.html) repeat-x center bottom;
+    background-size: auto 100%;
+    z-index: 50;
+    pointer-events: none;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  /* line 355, ../../../../src/page/philosophy/css/_pc.scss */
+  body .fade_line.intro_fade_line {
+    opacity: 0;
+    height: 200px;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  /* line 359, ../../../../src/page/philosophy/css/_pc.scss */
+  body .fade_line.intro_fade_line.active {
+    opacity: 1;
+  }
+}
+/*size*/
+@media print, screen and (min-width: 768px) and (max-width: 1359px) {
+  /* line 2, ../../../../src/page/philosophy/css/_pc.scss */
+  body {
+    	/*
+    	@function cvwp($size){
+    		// @return ($size / 1920 * 100) + vw;
+    		@if $mid == true{
+    			@return ($size) + px;
+    		} @else{
+    			@return ($size) + px;
+    		}
+    	}
+    
+    	@function cvwp($size){
+    		@return ($size) + px;
+    	}
+    
+    	.txt_up_h1{
+    		.t{
+    			span,path{
+    				transform: translateY(0%) !important;
+    			}
+    		}
+    	}
+    	
+    	.txt_up_h2{
+    		.t{
+    			span,path{
+    				transform: translateY(0%) !important;
+    			}
+    		}
+    	}
+    	.jp{
+    		opacity: 1 !important;
+    	}
+    	background: url(../img/_guide.png) no-repeat top center;
+    	// background: url(../img/_guidemenu.png) no-repeat top center;
+    	// background-size: 100% auto;
+    	// background-size: 1680px auto;
+    	background-size: 1360px auto;
+    	background-position: 50% 0px;
+    	width: 100%;
+        margin: 0 auto !important;
+    	// background-position: 50% 9px;
+        // &::-webkit-scrollbar {
+        //     display:none;
+        // }
+    	#header{
+    		width: 1360px !important;
+    		left: 50% !important;
+    		transform: translateX(-50%);
+    	}
+    	#menu_wide {
+    		left: 50% !important;
+    		transform: translateX(-50%) !important;
+    		width: 1360px !important;
+    		height: 765px !important;
+    	}
+    	#wrapper{
+    		opacity: 0.6 !important;
+    		// width: 1280px;
+    		width: 1360px;
+    		margin: 0 auto;
+    		.container{
+    			width: 1240px;
+    			margin: 0 auto;
+    			position: relative;
+    		}
+    	}
+    	#top{
+    		height: 759px !important;
+    	}
+        #header{
+    		opacity: 0.6 !important;
+    	}
+    */
+    /*============================
+    #wrapper
+    ============================*/
+  }
+  /* line 80, ../../../../src/page/philosophy/css/_pc.scss */
+  body .screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
+    pointer-events: none;
+    z-index: -1;
+  }
+  /* line 90, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper {
+    position: relative;
+    overflow: clip;
+    /*============================
+    #main
+    ============================*/
+  }
+  /* line 93, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #logo_fix {
+    position: absolute;
+    top: 5.07353vw;
+    left: 4.41176vw;
+    width: 5.88235vw;
+    transform: scale(1);
+  }
+  /* line 99, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #logo_fix .mark_anim {
+    width: 6.69118vw;
+    margin: -1.98529vw 0 0 -0.44118vw;
+  }
+  /* line 104, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper section {
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+  }
+  /* line 112, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main {
+    position: relative;
+    z-index: 10;
+    /*============================
+    #top
+    ============================*/
+    /*============================
+    #history
+    ============================*/
+    /*============================
+    #philosophy
+    ============================*/
+    /*============================
+    #next
+    ============================*/
+  }
+  /* line 115, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .en_jp {
+    display: block;
+  }
+  /* line 117, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .en_jp .en {
+    display: block;
+    font-family: 'Crimson Text', serif;
+    font-size: 2.05882vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    /* 56px */
+    letter-spacing: 0.20588vw;
+  }
+  /* line 126, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .en_jp .jp {
+    display: block;
+    font-size: 1.32353vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 209%;
+    /* 43.2px */
+    letter-spacing: 0.19853vw;
+    opacity: 0;
+    transition: all 0.4s;
+    transition-timing-function: linear;
+  }
+  /* line 136, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .en_jp .jp.open {
+    opacity: 1;
+  }
+  /* line 141, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .fadein {
+    opacity: 0;
+    transition: all 0.79s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  /* line 145, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .fadein.img2 {
+    transition-delay: 0.35s;
+  }
+  /* line 147, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .fadein.img2 picture {
+    transition-delay: 0.35s;
+  }
+  /* line 151, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .fadein.open {
+    opacity: 1;
+  }
+  /* line 153, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .fadein.open picture {
+    filter: blur(0px);
+  }
+  /* line 157, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .fadein picture {
+    filter: blur(80px);
+    transition: all 0.79s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  /* line 166, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top {
+    height: 100vh;
+    overflow: visible;
+    pointer-events: none;
+  }
+  /* line 170, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7.27941vw;
+  }
+  /* line 177, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  /* line 183, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .photo picture {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 186, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .photo picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* line 193, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .maincopy {
+    position: absolute;
+    bottom: 14.48529vw;
+    left: 10.07353vw;
+    width: 30.95588vw;
+  }
+  /* line 198, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .maincopy .t {
+    font-size: 1.91176vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 62.4px */
+    letter-spacing: 0.18382vw;
+    color: #4f1705;
+  }
+  /* line 207, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .copy {
+    position: absolute;
+    bottom: -2.94118vw;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    overflow: hidden;
+  }
+  /* line 214, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .copy picture {
+    display: inline-block;
+    transition: all 0.23s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+    transition: all 0.6s;
+    transition-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+    opacity: 0;
+  }
+  /* line 223, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #top .copy.open picture {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* line 232, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .content .txts {
+    opacity: 0;
+    transition: all 0.4s;
+    transition-timing-function: linear;
+  }
+  /* line 236, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .content .txts.open {
+    opacity: 1;
+  }
+  /* line 239, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .content .txts .t1 {
+    font-size: 1.47059vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    /* 40px */
+    letter-spacing: 0.22059vw;
+    margin-bottom: 1.83824vw;
+  }
+  /* line 247, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main .content .txts .t2 {
+    font-size: 1.17647vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    /* 32px */
+    letter-spacing: 0.17647vw;
+  }
+  /* line 259, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #history {
+    padding-top: 14.55882vw;
+    padding-bottom: 10.14706vw;
+  }
+  /* line 262, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #history .container {
+    width: 79.77941vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  /* line 269, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #history .container .img {
+    width: 34.55882vw;
+    margin: 0 10.58824vw 0 0;
+  }
+  /* line 273, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #history .container .content {
+    padding-top: 5.14706vw;
+  }
+  /* line 275, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #history .container .content h2 {
+    margin-bottom: 4.70588vw;
+  }
+  /* line 278, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #history .container .content .txts {
+    margin: 0 0 0 5vw;
+  }
+  /* line 288, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #philosophy {
+    padding-bottom: 9.04412vw;
+  }
+  /* line 290, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #philosophy .container {
+    width: 91.17647vw;
+  }
+  /* line 292, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #philosophy .container .content {
+    margin-left: 21.61765vw;
+    margin-bottom: 8.08824vw;
+  }
+  /* line 295, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #philosophy .container .content h2 {
+    margin-bottom: 4.77941vw;
+  }
+  /* line 298, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #philosophy .container .content .txts {
+    margin-left: 5.14706vw;
+  }
+  /* line 302, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #philosophy .container .img1 {
+    width: 49.70588vw;
+    margin-left: 35.73529vw;
+  }
+  /* line 306, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #philosophy .container .img2 {
+    width: 37.5vw;
+    margin: -20vw 0 0 0.73529vw;
+  }
+  /* line 316, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #next {
+    padding-bottom: 14.41176vw;
+  }
+  /* line 318, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #next .container {
+    width: 91.17647vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  /* line 324, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #next .container .content {
+    width: 43.38235vw;
+    margin: 7.86765vw 0 0 10.80882vw;
+  }
+  /* line 327, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #next .container .content h2 {
+    margin-bottom: 4.70588vw;
+  }
+  /* line 330, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #next .container .content .txts {
+    margin-left: 5.07353vw;
+  }
+  /* line 334, ../../../../src/page/philosophy/css/_pc.scss */
+  body #wrapper #main #next .container .img {
+    width: 34.63235vw;
+  }
+  /* line 344, ../../../../src/page/philosophy/css/_pc.scss */
+  body .fade_line {
+    position: fixed;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: url(http://www.fujiya-peko.co.jp/notfound.html) repeat-x center bottom;
+    background-size: auto 100%;
+    z-index: 50;
+    pointer-events: none;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  /* line 355, ../../../../src/page/philosophy/css/_pc.scss */
+  body .fade_line.intro_fade_line {
+    opacity: 0;
+    height: 14.70588vw;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  /* line 359, ../../../../src/page/philosophy/css/_pc.scss */
+  body .fade_line.intro_fade_line.active {
+    opacity: 1;
+  }
+}
+@media print {
+  /* line 6, ../../../../src/page/philosophy/css/_mid.scss */
+  #wrapper #footer .mark {
+    display: none !important;
+  }
+
+  /* line 9, ../../../../src/page/philosophy/css/_mid.scss */
+  #wrapper .txt_up_slide .t span, #wrapper .txt_up_slide .t path {
+    transform: translateY(0) !important;
+  }
+
+  /* line 12, ../../../../src/page/philosophy/css/_mid.scss */
+  #wrapper .txt_up_slide .t span, #wrapper .txt_up_slide .t path {
+    transform: translateY(0) !important;
+  }
+
+  /* line 15, ../../../../src/page/philosophy/css/_mid.scss */
+  body #wrapper #main .container .fadein {
+    opacity: 1 !important;
+  }
+
+  /* line 18, ../../../../src/page/philosophy/css/_mid.scss */
+  body #wrapper #main .container .fadein picture {
+    filter: blur(0px) !important;
+  }
+
+  /* line 21, ../../../../src/page/philosophy/css/_mid.scss */
+  body #wrapper #main .en_jp .jp {
+    opacity: 1 !important;
+  }
+
+  /* line 24, ../../../../src/page/philosophy/css/_mid.scss */
+  body #wrapper #main .content .txts {
+    opacity: 1 !important;
+  }
+}
+/*color*/
+/*anim*/
+/*size*/
+/*============================
+mixin
+============================*/
+/*
+* keyframes animationの定義
+* ※_anim.scssに定義
+*/
+/*
+* keyframesで定義したkeyframes animationの設定
+* @include animation(animation_name $time linear infinite);
+*/
+/*
+* css animationの時間とeasing指定
+*/
+/*
+* position:absoluteで縦横中央ぞろえ
+*/
+/*
+* 左右に均等のマージンをとった幅指定
+*/
+/*============================
+easing
+============================*/
+/*============================
+animation
+============================*/
+@media screen and (max-width: 767px) {
+  /* line 5, ../../../../src/page/philosophy/css/_sp.scss */
+  body {
+    	/*
+    	@function cvw($size){
+    		@return ($size) + px;
+    	}
+    
+    	.txt_up_h1{
+    		.t{
+    			span,path{
+    				transform: translateY(0%) !important;
+    			}
+    		}
+    	}
+    	
+    	.txt_up_h2{
+    		.t{
+    			span,path{
+    				transform: translateY(0%) !important;
+    			}
+    		}
+    	}
+    	.jp{
+    		opacity: 1 !important;
+    	}
+    
+    	background: url(../img/_guidesp.png) no-repeat top center;
+    	// background: url(../img/_guidemenusp.png) no-repeat top center;
+    	-webkit-background-size: 100% auto;
+    	background-size: 100% auto;
+    	// background: url(../img/_guidesp1.png) no-repeat top center;
+    	// -webkit-background-size: 100% auto;
+    	background-size: 100% auto;
+    	background-position: 50% 0px;
+    	// background-position-y: 6752px;
+    	width: 100%;
+        margin: 0 auto !important;
+        &::-webkit-scrollbar {
+            display:none;
+        }
+    	#wrapper{
+    		opacity: 0.6 !important;
+    		.container{
+    			width: 335px;
+    			margin: 0 auto;
+    			position: relative;
+    		}
+    	}
+        #header{
+    		opacity: 0.6 !important;
+    	}
+    	#top{
+    		height: 668px !important;
+    	}
+    
+    */
+    /*============================
+    #wrapper
+    ============================*/
+  }
+  /* line 63, ../../../../src/page/philosophy/css/_sp.scss */
+  body .screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
+    pointer-events: none;
+    z-index: -1;
+  }
+  /* line 76, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper {
+    position: relative;
+    overflow: clip;
+    /*============================
+    #main
+    ============================*/
+  }
+  /* line 79, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #logo_fix {
+    position: absolute;
+  }
+  /* line 82, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #btn_menu {
+    opacity: 1;
+    transform: translateY(-0.8vw);
+  }
+  /* line 86, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper section {
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+  }
+  /* line 94, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main {
+    position: relative;
+    z-index: 10;
+    /*============================
+    #top
+    ============================*/
+    /*============================
+    #top
+    ============================*/
+    /*============================
+    #history
+    ============================*/
+    /*============================
+    #philosophy
+    ============================*/
+    /*============================
+    #next
+    ============================*/
+  }
+  /* line 100, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main .en_jp {
+    display: block;
+    margin-bottom: 10.4vw;
+  }
+  /* line 103, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main .en_jp .en {
+    display: block;
+    font-family: 'Crimson Text', serif;
+    font-size: 7.46667vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    /* 56px */
+    letter-spacing: 0.74667vw;
+  }
+  /* line 112, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main .en_jp .jp {
+    display: block;
+    font-size: 3.73333vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 33.6px */
+    letter-spacing: 0.56vw;
+    opacity: 0;
+    transition: all 0.4s;
+    transition-timing-function: linear;
+  }
+  /* line 122, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main .en_jp .jp.open {
+    opacity: 1;
+  }
+  /* line 127, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main .fadein {
+    opacity: 0;
+    transition: all 0.79s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  /* line 131, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main .fadein.img2 {
+    transition-delay: 0.35s;
+  }
+  /* line 133, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main .fadein.img2 picture {
+    transition-delay: 0.35s;
+  }
+  /* line 137, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main .fadein.open {
+    opacity: 1;
+  }
+  /* line 139, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main .fadein.open picture {
+    filter: blur(0px);
+  }
+  /* line 143, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main .fadein picture {
+    filter: blur(80px);
+    transition: all 0.79s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  /* line 152, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #top {
+    height: 100vh;
+    height: 100svh;
+    overflow: visible;
+  }
+  /* line 156, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #top .bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 42.66667vw;
+  }
+  /* line 163, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #top .photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  /* line 169, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #top .photo picture {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 172, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #top .photo picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* line 179, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #top .maincopy {
+    position: absolute;
+    bottom: 53.86667vw;
+    left: 8.53333vw;
+    width: 69.86667vw;
+  }
+  /* line 184, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #top .maincopy .set {
+    display: block;
+    margin-bottom: 5.33333vw;
+  }
+  /* line 188, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #top .maincopy .t {
+    font-size: 4.8vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 43.2px */
+    letter-spacing: 0.72vw;
+    color: #4f1705;
+  }
+  /* line 197, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #top .copy {
+    position: absolute;
+    bottom: -4.8vw;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  /* line 203, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #top .copy picture {
+    display: inline-block;
+    transition: all 0.23s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+    transition: all 0.6s;
+    transition-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+    opacity: 0;
+  }
+  /* line 212, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #top .copy.open picture {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* line 221, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main .content .txts {
+    opacity: 0;
+    transition: all 0.4s;
+    transition-timing-function: linear;
+  }
+  /* line 225, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main .content .txts.open {
+    opacity: 1;
+  }
+  /* line 228, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main .content .txts .t1 {
+    font-size: 4.8vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    /* 36px */
+    letter-spacing: 0.72vw;
+    margin-bottom: 6.4vw;
+  }
+  /* line 236, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main .content .txts .t2 {
+    font-size: 3.73333vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    /* 28px */
+    letter-spacing: 0.45333vw;
+    white-space: nowrap;
+  }
+  /* line 250, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #history {
+    padding-top: 33.06667vw;
+    padding-bottom: 34.13333vw;
+  }
+  /* line 253, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #history .container {
+    margin: 0 auto;
+  }
+  /* line 255, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #history .container .img {
+    width: 64vw;
+    margin: 0 0 19.2vw 13.06667vw;
+  }
+  /* line 259, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #history .container .content {
+    margin: 0 0 0 2.4vw;
+  }
+  /* line 261, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #history .container .content h2 {
+    margin-bottom: 14.66667vw;
+  }
+  /* line 264, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #history .container .content .txts {
+    margin: 0 0 0 4.53333vw;
+    width: 86.13333vw;
+  }
+  /* line 275, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #philosophy {
+    padding-bottom: 35.73333vw;
+  }
+  /* line 278, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #philosophy .container .content {
+    margin: 0 0 0 2.66667vw;
+    margin-bottom: 18.93333vw;
+  }
+  /* line 281, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #philosophy .container .content h2 {
+    margin-bottom: 14.66667vw;
+  }
+  /* line 284, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #philosophy .container .content .txts {
+    margin: 0 0 0 4vw;
+    width: 86.13333vw;
+  }
+  /* line 287, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #philosophy .container .content .txts .t1 {
+    font-size: 5.33333vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    /* 40px */
+    letter-spacing: 0.8vw;
+    white-space: nowrap;
+  }
+  /* line 297, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #philosophy .container .img1 {
+    width: 89.33333vw;
+    margin-left: 5.33333vw;
+  }
+  /* line 301, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #philosophy .container .img2 {
+    width: 73.33333vw;
+    margin: -5.86667vw 0 0 -5.33333vw;
+  }
+  /* line 311, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #next {
+    padding-bottom: 41.33333vw;
+  }
+  /* line 314, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #next .container .content {
+    margin: 0 0 0 2.66667vw;
+    margin-bottom: 19.73333vw;
+  }
+  /* line 317, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #next .container .content h2 {
+    margin-bottom: 14.13333vw;
+  }
+  /* line 320, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #next .container .content .txts {
+    margin-left: 4vw;
+  }
+  /* line 324, ../../../../src/page/philosophy/css/_sp.scss */
+  body #wrapper #main #next .container .img {
+    width: 64vw;
+    margin-left: 13.06667vw;
+  }
+  /* line 332, ../../../../src/page/philosophy/css/_sp.scss */
+  body .fade_line {
+    position: fixed;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 21.33333vw;
+    background: url(http://www.fujiya-peko.co.jp/notfound.html) repeat-x center bottom;
+    background-size: auto 100%;
+    z-index: 50;
+    pointer-events: none;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  /* line 343, ../../../../src/page/philosophy/css/_sp.scss */
+  body .fade_line.intro_fade_line {
+    opacity: 0;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  /* line 346, ../../../../src/page/philosophy/css/_sp.scss */
+  body .fade_line.intro_fade_line.active {
+    opacity: 1;
+  }
+}

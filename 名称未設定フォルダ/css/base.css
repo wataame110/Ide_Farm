@@ -1,0 +1,252 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&amp;display=swap');
+
+/* ---------------------------------------------------
+   File: base.css
+   Version: 1.0.0
+   Update: 2022-02-25
+   Author: https://flowlab.co.jp
+
+   (c)2007-2022 Flowlab inc. All Rights Reserved.
+--------------------------------------------------- */
+
+
+
+/* =======================================================================================================================
+
+   WIDE DESKTOP LAYOUT
+
+======================================================================================================================= */
+
+/* ====================================================
+		Default
+==================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	border: 0;
+	outline: 0;
+	font-size: 1em;
+  font-weight: normal;
+}
+html {
+	font-size: 62.5%;
+}
+body, table, input, textarea, select, option {
+	font-family: ten-mincho-text, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  color: #2e1812;
+}
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, small {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+blockquote, q {
+	quotes: none;
+}
+:focus {
+	outline: 0;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+img {
+	vertical-align: top;
+	max-width: 100%;
+  height: auto;
+	image-rendering: -webkit-optimize-contrast;
+}
+a,
+a:link {
+	color: #2e1812;
+	text-decoration: none;
+}
+a:visited {
+	color: #2e1812;
+}
+a:hover {
+	opacity: 0.7;
+}
+a:active {
+	color: #2e1812;
+}
+a, a img {
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.flex,
+.flex_space-around,
+.flex_center {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex {
+  justify-content: space-between;
+}
+.flex_space-around {
+  justify-content: space-around;
+}
+.flex_center {
+  justify-content: center;
+}
+
+
+/* ====================================================
+		Layout
+==================================================== */
+body {
+	min-width: 1300px;
+	color: #333;
+	font-size: 1.6rem;
+	line-height: 2;
+	text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+  overflow-x: hidden;
+  letter-spacing: 0.1em;
+}
+#container {
+	text-align: left;
+	position: relative;
+	overflow: hidden;
+}
+#main {
+}
+
+@media all and (min-width: 897px) {
+  .sp {
+		display: none !important;
+	}
+}
+
+
+/* ====================================================
+		Contents
+==================================================== */
+p {
+  line-height: 2.4;
+	font-feature-settings: "palt";
+	-moz-font-feature-settings: "palt";
+}
+a[href^="tel:"] {
+	cursor: default;
+	pointer-events: none;
+}
+
+
+/* ====================================================
+		Animation
+==================================================== */
+.fadein {
+	opacity: 0;
+	transition: opacity 1s cubic-bezier(0.75, 0, 0.25, 1);
+}
+.fadein.scrollin {
+	opacity: 1;
+}
+.phoFadein {
+	transition: clip-path 1.4s cubic-bezier(0.75, 0, 0.25, 1), -webkit-clip-path 1.4s cubic-bezier(0.75, 0, 0.25, 1);
+	clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+}
+.phoFadein.scrollin {
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+
+
+
+
+
+/* =======================================================================================================================
+
+   TABLET
+
+======================================================================================================================= */
+@media screen and (min-width: 897px) and (max-width: 1299px) {
+  
+  
+  /* ====================================================
+      Layout
+  ==================================================== */
+  body {
+		min-width: 100%!important;
+	}
+  body.fixed {
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+  
+  
+}
+
+
+
+
+
+
+/* =======================================================================================================================
+
+   MOBILE
+
+======================================================================================================================= */
+@media screen and (max-width: 896px) {
+  
+  
+  /* ====================================================
+      Layout
+  ==================================================== */
+  body {
+		min-width: inherit;
+    font-size: 1.4rem;
+	}
+	body.fixed {
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+	#container {
+		/*padding-top: 60px;*/
+	}
+	.pc {
+		display: none !important;
+	}
+  
+  
+  /* ====================================================
+      Contents
+  ==================================================== */
+	p {
+		line-height: 2.2;
+		letter-spacing: 0.1em;
+	}
+	a:hover,
+	a:hover img {
+		opacity: 1 !important;
+	}
+	a[href^="tel:"] {
+		cursor: pointer;
+		pointer-events: auto;
+	}
+  
+  
+}
