@@ -1577,13 +1577,6 @@ _::-webkit-full-page-media, _:future, :root .clip-path_long_right {
     letter-spacing: 0.01em;
   }
   
-  
-  
-
-  
-  
-  
-  
   /* ====================================================
       Main Visual
   ==================================================== */
@@ -1596,7 +1589,6 @@ _::-webkit-full-page-media, _:future, :root .clip-path_long_right {
   #mainVisual .swiper-wrapper img {
     width: 100%;
     max-width: inherit!important;
-    height: calc(100vh - 120px);
     object-fit: cover;
   }
   
