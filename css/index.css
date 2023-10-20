@@ -76,7 +76,7 @@ small {
 ==================================================== */
 #mainVisual {
   width: 100%;
-  background: url("../img_index/bg.png") repeat-x center bottom / 222px 630px;
+  background: url("../img/bg.png") repeat-x center bottom / 222px 630px;
   padding-bottom: 100px;
   margin-bottom: 200px;
 }
@@ -191,7 +191,7 @@ small {
 #peach .photoArea::before {
   width: 220px;
   height: 100px;
-  background: url("../img_index/txt_peach.png") no-repeat 0 0 / 220px 100px;
+  /* background: url("../img/txt_peach.png") no-repeat 0 0 / 220px 100px; */
   top: -80px;
   right: 0;
   content: '';
@@ -232,7 +232,7 @@ small {
 #peach #experienceSummary .photoArea::before {
   width: 240px;
   height: 114px;
-  background: url("../img_index/txt_peach-sub.png") no-repeat 0 0 / 240px 114px;
+  /* background: url("../img/txt_peach-sub.png") no-repeat 0 0 / 240px 114px; */
   top: -60px;
   left: -60px;
   content: '';
@@ -373,7 +373,7 @@ small {
 #peach #experienceSummary .photoArea .btn a span::before {
   width: 16px;
   height: 18px;
-  background: url("../img_common/icon_calendar.png") no-repeat 0 0 / 16px 18px;
+  background: url("../img/icon_calendar.png") no-repeat 0 0 / 16px 18px;
   top: 50%;
   left: -28px;
   transform: translateY(-50%);
@@ -417,7 +417,7 @@ small {
   content: '';
   width: 24px;
   height: 24px;
-  background: url("../img_common/icon_instagram_footer.png") no-repeat 0 0 / 24px;
+  background: url("../img/icon_instagram_footer.png") no-repeat 0 0 / 24px;
   top: 50%;
   left: -40px;
   transform: translateY(-50%);
@@ -571,12 +571,12 @@ _::-webkit-full-page-media, _:future, :root #about .photoSubArea .safari {
 #about li:nth-child(1) a span::before {
   width: 18px;
   height: 18px;
-  background: url("../img_common/icon_melon.png") no-repeat 0 0 / 18px;
+  background: url("../img/icon_melon.png") no-repeat 0 0 / 18px;
 }
 #about li:nth-child(2) a span::before {
   width: 14px;
   height: 16px;
-  background: url("../img_common/icon_onlinestore.png") no-repeat 0 0 / 14px 16px;
+  background: url("../img/icon_onlinestore.png") no-repeat 0 0 / 14px 16px;
 }
 
 
@@ -714,7 +714,7 @@ _::-webkit-full-page-media, _:future, :root #about .photoSubArea .safari {
 #member .toru .photoArea p::before {
   width: 218px;
   height: 92px;
-  background: url("../img_index/txt_member_toru.png") no-repeat 0 0 / 218px 92px;
+  /* background: url("../img/txt_member_toru.png") no-repeat 0 0 / 218px 92px; */
   top: -70px;
   right: -40px;
 }
@@ -742,7 +742,7 @@ _::-webkit-full-page-media, _:future, :root #about .photoSubArea .safari {
 #member .masayo .photoArea p::before {
   width: 160px;
   height: 92px;
-  background: url("../img_index/txt_member_masayo.png") no-repeat 0 0 / 160px 92px;
+  /* background: url("../img/txt_member_masayo.png") no-repeat 0 0 / 160px 92px; */
   top: -70px;
   left: -40px;
 }
@@ -757,7 +757,7 @@ _::-webkit-full-page-media, _:future, :root #about .photoSubArea .safari {
 #member .masayo .btn a span::before {
   width: 14px;
   height: 14px;
-  background: url("../img_common/icon_instagram_footer.png") no-repeat 0 0 / 14px;
+  background: url("../img/icon_instagram_footer.png") no-repeat 0 0 / 14px;
   top: 50%;
   left: -28px;
   transform: translateY(-50%);
@@ -796,8 +796,8 @@ _::-webkit-full-page-media, _:future, :root #about .photoSubArea .safari {
   padding-right: 3px;
 }
 #contact strong img {
-  width: 30px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   top: 0.1em;
   left: 0;
   position: relative;
@@ -974,7 +974,7 @@ table#mfp_confirm_table tr td {
   border-radius: 50px;
   padding: 20px 50px;
   border: 0;
-  background: url("../img_common/btn_bg-green.html") no-repeat center center / cover;
+  background: url("../img/btn_bg-green.html") no-repeat center center / cover;
   text-shadow: none;
   font-size: 1.6rem!important;
 }
@@ -1016,7 +1016,7 @@ div.mfp_buttons button#mfp_button_send:hover {
 		ClipPath　LargeImage
 ------------------------------- */
 .clip-path_large {
-  width: 100%;
+  width: auto;
   height: auto;
   clip-path: url(#clipPath_large);
   aspect-ratio: 550/678;
@@ -1058,7 +1058,7 @@ div.mfp_buttons button#mfp_button_send:hover {
   z-index: 2;
   writing-mode: vertical-rl;
   text-orientation: upright;
-  color: #fff;
+  color: #000000;
 }
 _::-webkit-full-page-media, _:future, :root .clip-path_long_left-wrapper h2 {
   left: 35%;
@@ -1589,7 +1589,7 @@ _::-webkit-full-page-media, _:future, :root .clip-path_long_right {
   ==================================================== */
   #mainVisual {
     width: 100%;
-    background: url("../img_index/bg.png") repeat-x center bottom / 111px 315px;
+    background: url("../img/bg-ichigo.png") repeat-x center bottom / 111px 315px;
     padding-bottom: 60px;
     margin-bottom: 100px;
   }
@@ -1868,6 +1868,7 @@ _::-webkit-full-page-media, _:future, :root .clip-path_long_right {
   
   /* Title */
   #about .flex.main .textBox h3 {
+    font-size: 15px;
     padding-bottom: 25px;
   }
   
@@ -2160,7 +2161,7 @@ _::-webkit-full-page-media, _:future, :root .clip-path_long_right {
   ------------------------------- */
   .clip-path_large,
   .photoArea .safari {
-    width: 80%;
+    width: auto;
     height: auto;
     aspect-ratio: 550/678;
     margin: 0 auto;
