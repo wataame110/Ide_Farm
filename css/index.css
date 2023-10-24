@@ -97,9 +97,15 @@ small {
   -webkit-clip-path: url(#clipPath_slide);
   clip-path: url(#clipPath_slide);
 }
-.swiper-slide img {
+/* .swiper-slide img {
   display: block;
   width: 100%;
+  
+} */
+.swiper-slide video {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .swiper-slide-active img,
 .swiper-slide-duplicate-active img,
@@ -1534,18 +1540,8 @@ _::-webkit-full-page-media, _:future, :root .clip-path_long_right {
     left: auto!important;
     right: 100px;
   }
-  
-  
-  
+
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -1576,6 +1572,7 @@ _::-webkit-full-page-media, _:future, :root .clip-path_long_right {
     line-height: 1.8;
     letter-spacing: 0.01em;
   }
+
   
   /* ====================================================
       Main Visual
@@ -1586,9 +1583,18 @@ _::-webkit-full-page-media, _:future, :root .clip-path_long_right {
     padding-bottom: 60px;
     margin-bottom: 100px;
   }
-  #mainVisual .swiper-wrapper img {
+  /* #mainVisual .swiper-wrapper img {
     width: 100%;
     max-width: inherit!important;
+    height: calc(100vh - 120px);
+    object-fit: cover;
+  } */
+
+  #mainVisual .swiper-wrapper video {
+    width: 100%;
+    max-width: inherit!important;
+    height: auto;
+    /* height: calc(100vh - 120px); */
     object-fit: cover;
   }
   

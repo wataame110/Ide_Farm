@@ -189,13 +189,13 @@ body {
   margin-bottom: 20px;
   background-size: contain;
 } 
-#gNavi li:nth-child(1) a::before { background-image: url("../img/icon_peach.png");}
+/* #gNavi li:nth-child(1) a::before { background-image: url("../img/icon_peach.png");}
 #gNavi li:nth-child(2) a::before { background-image: url(../img/icon_about.png);}
 #gNavi li:nth-child(3) a::before { background-image: url(../img/icon_member.png);}
 #gNavi li:nth-child(4) a::before { background-image: url(../img/icon_access.png);}
 #gNavi li:nth-child(5) a::before { background-image: url(../img/icon_instagram.png);}
-#gNavi li:nth-child(6) a::before { background-image: url(../img/icon_melon.png);}
-#gNavi li:nth-child(7) a::before { background-image: url(../img/icon_contact.png);}
+#gNavi li:nth-child(6) a::before { background-image: url(../img/icon_contact.png);}
+#gNavi li:nth-child(7) a::before { background-image: url(../img/icon_home.png);} */
 
 .link_blank a::after {
   content: "";
